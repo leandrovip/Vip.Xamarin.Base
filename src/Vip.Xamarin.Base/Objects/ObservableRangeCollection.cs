@@ -135,6 +135,11 @@ namespace Vip.Xamarin.Base
             RaiseChangeNotificationEvents(NotifyCollectionChangedAction.Reset);
         }
 
+        public void UpdateRaiseNotification()
+        {
+            RaiseChangeNotificationEvents(NotifyCollectionChangedAction.Reset);
+        }
+
         private bool AddArrangeCore(IEnumerable<T> collection)
         {
             var itemAdded = false;
